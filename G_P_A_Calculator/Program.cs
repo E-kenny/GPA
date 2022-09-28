@@ -42,7 +42,7 @@ namespace C_P_A_Calculator
                     if (courseUnitChecker)
                     {
                         //Takes in the course unit
-                        Console.WriteLine("Please, Insert Course Unit, input must be greater than 0, less than 5 and must be an integer");
+                        Console.WriteLine("Please, Insert Course Unit, input must be greater than 0 and not greater than 5 and must be an integer");
 
                         bool typeCheck = int.TryParse(Console.ReadLine(), out courseUnit);
                         if (typeCheck && courseUnit > 0 && courseUnit < 6)
@@ -58,7 +58,7 @@ namespace C_P_A_Calculator
                     if (scoreChecker)
                     {
                         //Takes in the Score
-                        Console.WriteLine("Please, Insert Course Score, , input must be greater than 0, and less than 100 and must be an integer");
+                        Console.WriteLine("Please, Insert Course Score, , input must be greater than 0 and not greater than 100 and must be an integer");
                         bool typeCheck = int.TryParse(Console.ReadLine(), out score);
                         if (typeCheck && score > 0 && score < 101)
                         {
@@ -75,7 +75,7 @@ namespace C_P_A_Calculator
                     courses.Add(new Course(courseCode, courseUnit, score));
 
                     //ask for more course
-                    Console.WriteLine("Do you want to add more course? type (Y or Yes) to add or any button to continue");
+                    Console.WriteLine("Do you want to add more course? type (Y or Yes) to add more or any button to continue");
                     string decision = Console.ReadLine();
 
                     if (!(decision.ToLower() == "y" || decision.ToLower() == "yes")) checker = false;
