@@ -75,7 +75,7 @@ namespace C_P_A_Calculator
                     courses.Add(new Course(courseCode, courseUnit, score));
 
                     //ask for more course
-                    Console.WriteLine("Do you want to add more course? type (Y or Yes) to add more or any button to continue");
+                    Console.WriteLine("Do you want to add more course? type (Y or Yes) to add more or any button to print");
                     string decision = Console.ReadLine();
 
                     if (!(decision.ToLower() == "y" || decision.ToLower() == "yes")) checker = false;
