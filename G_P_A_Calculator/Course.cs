@@ -12,7 +12,7 @@ namespace G_P_A_Calculator
         private double    _courseUnit;
         private double    _courseGrade;
         private double    _score;
-        private char    _grade;
+        private char      _grade;
         private double    _weightPoint;
         private string    _remark;
         private double    _unitPassed;

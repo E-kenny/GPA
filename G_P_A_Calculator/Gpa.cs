@@ -50,7 +50,7 @@ namespace G_P_A_Calculator
           // set { _totalUnitPassed = value; }
         }
 
-        public double Calculate()
+         public double Calculate()
         {
             return _totalWeightPoint/_totalCourseUnitRegistered;
         }
