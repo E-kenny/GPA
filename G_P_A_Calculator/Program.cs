@@ -78,7 +78,18 @@ namespace C_P_A_Calculator
                     Console.WriteLine("Do you want to add more course? type (Y or Yes) to add more or any button to print");
                     string decision = Console.ReadLine();
 
-                    if (!(decision.ToLower() == "y" || decision.ToLower() == "yes")) checker = false;
+                    if ((decision.ToLower() == "y" || decision.ToLower() == "yes"))
+                    {
+                        checker = true;
+                        courseCodeChecker = true;
+                        courseUnitChecker = true;
+                        scoreChecker = true;
+                    }
+                    else
+                    {
+                        checker = false;
+                    }
+                       
 
                 }
 
